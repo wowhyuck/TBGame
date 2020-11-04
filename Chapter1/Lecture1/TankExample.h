@@ -42,7 +42,7 @@ namespace jm
 
 		void update(const float& dt)
 		{
-			center += velocity * dt;
+			center += velocity * dt * 0.1;
 		}
 	};
 
@@ -68,10 +68,10 @@ namespace jm
 		void update() override
 		{
 			// move tank
-			if (isKeyPressed(GLFW_KEY_LEFT))	tank.center.x -= 0.5f * getTimeStep();
-			if (isKeyPressed(GLFW_KEY_RIGHT))	tank.center.x += 0.5f * getTimeStep();
-			if (isKeyPressed(GLFW_KEY_UP))		tank.center.y += 0.5f * getTimeStep();
-			if (isKeyPressed(GLFW_KEY_DOWN))	tank.center.y -= 0.5f * getTimeStep();
+			if (isKeyPressed(GLFW_KEY_LEFT))	tank.center.x -= 0.05f * getTimeStep();
+			if (isKeyPressed(GLFW_KEY_RIGHT))	tank.center.x += 0.05f * getTimeStep();
+			if (isKeyPressed(GLFW_KEY_UP))		tank.center.y += 0.05f * getTimeStep();
+			if (isKeyPressed(GLFW_KEY_DOWN))	tank.center.y -= 0.05f * getTimeStep();
 
 			// shoot a cannon ball
 			if (isKeyPressedAndReleased(GLFW_KEY_SPACE))
