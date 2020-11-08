@@ -9,6 +9,12 @@ namespace jm
 	public:
 		float width, height;
 
+		Box(const RGB& _color, const vec2& _pos, const float& _width,
+			const float& _height)
+		{
+			init(_color, _pos, _width, _height);
+		}
+
 		void init(const RGB & _color, const vec2 & _pos, const float & _width, 
 			const float &_height)
 		{
