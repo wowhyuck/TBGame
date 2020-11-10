@@ -30,5 +30,15 @@ namespace jm
 			}
 			endTransformation();
 		}
+
+		static GeometricObject* makeTriangle(const RGB& _color, const vec2& _pos, const float& _size);
+
+		static GeometricObject* makeCircle(const RGB& _color, const vec2& _pos, const float& _size);
+
+		static GeometricObject* makeBox(const RGB& _color, const vec2& _pos, const float& _width,
+			const float& _height);
+
+		static GeometricObject* makeStar(const RGB& _color, const vec2& _pos, const float& _os, const float& _is);
+
 	};
 }

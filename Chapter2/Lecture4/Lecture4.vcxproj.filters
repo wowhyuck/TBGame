@@ -52,5 +52,6 @@
       <Filter>Engine</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="GeometricObject.cpp" />
   </ItemGroup>
 </Project>
