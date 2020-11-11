@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Game2D.h"
-//#include "SoundEngine_Singleton.h"
+#include "SoundEngine_Singleton.h"
 
 namespace jm
 {
@@ -13,12 +13,12 @@ namespace jm
 
 		MyBullet()
 		{
-			//SoundEngine_Singleton::getInstance()->playSound("missile");
+			SoundEngine_Singleton::getInstance()->playSound("missile");
 		}
 
 		~MyBullet()
 		{
-			//SoundEngine_Singleton::getInstance()->stopSound("missile");
+			SoundEngine_Singleton::getInstance()->stopSound("missile");
 		}
 
 		void draw()
